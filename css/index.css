@@ -1,0 +1,258 @@
+body{
+    background-color: #F5F1ED;
+    margin: 0;
+    padding: 0;
+       
+}
+.content{
+    width: 50%;
+    height: auto;
+    background-color: #E8DCB9;  
+    position: absolute;
+    margin-top: 2%;
+    border-radius: 20px;
+    left: 25%;
+    padding: 1em;
+
+}
+.titulo{
+    color: #0D1B1E;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    line-height : 15px;
+}
+
+.text_content{
+    width: 30%;
+    height: auto;
+    background-color: #7798AB;
+    position: relative;
+}
+
+.contacto{
+    position: absolute;
+    margin-top: 15%;
+    border-radius: 20px;
+    left: 5%;
+    padding: 1em;
+    width: 15%;
+    height: auto;
+    background-color: #E8DCB9;
+    text-align: center;
+    line-height : 8px;
+
+
+}
+
+.info{
+    width: 50%;
+    height: auto;
+}
+
+.telefono{
+    display:block;
+    margin:auto;
+}
+
+.contacto img{
+    height: auto;
+    width: 20px;
+    vertical-align: middle;
+
+}
+
+.telemail{
+    left: 25%;
+    width: auto;   
+}
+
+.skills{
+    font-weight: bolder;
+    background-color: #c3e2c6;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 0;
+    border-radius: 20px;
+    left: 78%;
+    padding: 1em;
+    width: 15%;
+    height: auto;
+    text-align: center;
+    line-height : 8px;
+}
+
+.img1 .program{
+    margin-left: 20%;
+    width: 150px;
+    word-spacing: 12pt;
+    text-align: left;
+    font-size: small;
+    font-style: italic;
+    line-height : 8px;
+
+}
+
+.skills img{
+    margin-top: 4%;
+    width: 30px;
+    height: 30px;
+}
+
+
+.skills .img2 img{
+    margin-left: 4%;
+    width: 30px;
+    height: 30px;
+}
+
+
+.img2 .program{
+    margin-left: 20%;
+    width: 150px;
+    word-spacing: 4pt;
+    text-align: left;
+    font-size: small;
+    font-style: italic;
+    line-height : 8px;
+
+}
+
+.skill_tecnical{
+    font-weight: bolder;
+    background-color: #c3e2c6;
+    position: absolute;
+    margin-top: 27%;
+    border-radius: 20px;
+    left: 78%;
+    padding: 1em;
+    width: 15%;
+    height: auto;
+    text-align: center;
+}
+
+.skill_tecnical img{
+    margin-left: 5%;
+    width: 45px;
+    height: 30px;
+
+}
+
+.skill_tecnical .titulos_skils{
+    text-align: left;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.skill_tecnical .img1{
+    width: auto;
+    text-align: left;
+    margin-top: 7px;
+    font-weight: 100;
+    font-size: medium;
+    line-height: 16px;
+}
+
+.portafolio{
+    width: 80px;
+    height: 20px;
+    background-color: #F2CEE6;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    left: 82.5%;
+    padding: 1em;
+    position: absolute;
+    margin-top: 12px;
+}
+
+
+.foto{
+    width: 150px;
+    height: 150px;
+    left: 7.5%;
+    position: absolute;
+    margin-top: 10px;
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 45%;
+
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.education{
+    width: 50%;
+    margin-top: 30%;
+    height: auto;
+    background-color: #A6BCC9;
+    border-radius: 20px;
+    left: 25%;
+    padding: 1em;
+    position: absolute;
+    font-weight: bold;
+    line-height: 8px;
+    text-align: center;
+
+}
+
+
+.education .sub{
+    font-size: small;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.education .sub1{
+    font-size: small;
+    font-weight: light;
+    text-align: left;
+}
+
+.education .title{
+    font-weight: light;
+    text-align: left;
+}
+
+.blandas {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    width: 15%;
+    margin-top: 22%;
+    height: auto;
+    background-color: #C3DBC5;
+    border-radius: 20px;
+    left: 5%;
+    padding: 1em;
+
+}
+.blandas .sub1{
+    font-weight: normal;
+    text-align: left;
+}
+
+.experience{
+    width: 50%;
+    margin-top: 45%;
+    height: auto;
+    background-color: #A6BCC9;
+    border-radius: 20px;
+    left: 25%;
+    padding: 1em;
+    position: absolute;
+    font-weight: bold;
+    line-height: 8px;
+    text-align: center;
+    margin-bottom: auto;
+}
