@@ -208,9 +208,9 @@ body{
 
 .education{
     width: 50%;
-    margin-top: 30%;
+    margin-top: 28%;
     height: auto;
-    background-color: #A6BCC9;
+    background-color: #CCD9E0;
     border-radius: 20px;
     left: 25%;
     padding: 1em;
@@ -260,9 +260,9 @@ body{
 
 .experience{
     width: 50%;
-    margin-top: 45%;
+    margin-top: 42%;
     height: auto;
-    background-color: #A6BCC9;
+    background-color: #CCD9E0;
     border-radius: 20px;
     left: 25%;
     padding: 1em;
@@ -341,4 +341,24 @@ body{
     text-align: left;
     font-size: small;
     line-height: 12px;
+}
+
+.profile{
+    width: 50%;
+    margin-top: 15%;
+    height: auto;
+    background-color: #CCD9E0;
+    border-radius: 20px;
+    left: 25%;
+    padding: 1em;
+    position: absolute;
+    font-weight: bold;
+    line-height: 8px;
+    text-align: center;
+}
+
+.profile .sub{
+    text-align: left;
+    font-weight: normal;
+    line-height: 18px;
 }
