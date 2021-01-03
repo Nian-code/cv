@@ -328,12 +328,14 @@ body{
 
 
 .experience .sub{
+    margin: 2%;
     width: 100%;
     font-size: small;
-    font-weight: light;
-    text-align: left;
+    font-weight: normal;
+    
 }
 .title_job{
+    text-align: left;
     width: 100%;
     height: auto;
     text-align: start;
@@ -348,6 +350,7 @@ body{
 }
 
 .detalles{
+    margin: 2%;
     font-weight: light;
     text-align: left;
 }
@@ -357,12 +360,12 @@ body{
     flex-wrap: wrap;
     align-content: flex-start;
     width: 100%;
-    height: 20%;
+    height: 18%;
     padding: 1em;
     margin-top: 0;
     text-align: center;
     font-weight: bold;
-    line-height: 5px;
+    line-height: 1px;
 }
 
 .education a{
@@ -377,7 +380,7 @@ body{
 .education .sub{
     width: 100%;
     margin-left: 2%;
-    font-size: small;
+    font-size: medium;
     font-style: italic;
     font-weight: lighter;
     text-align: left;
@@ -389,6 +392,10 @@ body{
     font-weight: light;
     text-align: left;
     line-height: 18px;
+}
+
+summary{
+    font-weight: lighter;
 }
 
 
