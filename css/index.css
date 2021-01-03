@@ -1,53 +1,115 @@
 body{
-    background-color: #F5F1ED;
     margin: 0;
     padding: 0;
-    height:100px;
-    width:300px;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    background-color: #e0f1fa ;
+    padding:0;
+    margin:0;
     overflow-y:scroll;
     overflow-x:hidden;
-
 }
-.content{
-    width: 50%;
-    height: auto;
-    /* background-color: #E8DCB9;   */
-    position: absolute;
+
+.cabecera-content{
     margin-top: 2%;
-    border-radius: 20px;
-    left: 25%;
-    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
 
 }
-.titulo{
+
+.title{
+    order: 1;   
+    width: 50%;
+    font-size: 4vw;
     color: #0D1B1E;
     font-weight: bolder;
     font-size: xx-large;
-    text-align: center;
     font-family: 'Oswald', sans-serif;
-    line-height : 15px;
+    text-align: center;
+    line-height: 13px;
+}
+.foto-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 }
 
-.text_content{
-    width: 30%;
-    height: auto;
-    background-color: #7798AB;
+.foto{
+    width: 170px;
+    height: 170px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 45%;
+
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
     position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.botton{
+    width: 8%;
+    height: 50%;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.portafolio{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 38%;
+    background-color: #F2CEE6;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.descargar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 38%;
+    background-color: #F2CEE6;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.left-content{    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 18%;
+    margin:1em;
+
 }
 
 .contacto{
-    position: absolute;
-    margin-top: 15%;
     border-radius: 20px;
-    left: 5%;
     padding: 1em;
-    width: 15%;
-    height: auto;
     background-color: #EBE1C1;
     text-align: center;
     line-height : 8px;
-
-
+    height: 10%;
+    width: 90%;
 }
 
 .info{
@@ -68,19 +130,63 @@ body{
 }
 
 .telemail{
-    left: 25%;
     width: auto;   
 }
+
+.blandas {
+    text-align: center;
+    font-weight: bold;
+    width: 90%;
+    height: 20%;
+    background-color: #EBE1C1;
+    border-radius: 20px;
+    padding: 1em;
+    line-height: 8px;
+
+}
+.blandas .sub1{
+    font-weight: normal;
+    text-align: left;
+}
+
+.referencias{ 
+    font-weight: bold;
+    width: 90%;
+    height: 40%;
+    background-color: #EBE1C1;
+    border-radius: 20px;
+    padding: 1em;
+}
+
+
+.referencias .sub{
+    font-size: small;
+    font-weight: normal;
+    text-align: left;
+
+}
+
+.referencias .title{
+    font-weight: blond;
+    text-align: left;
+    font-size: small;
+}
+/* 
+.text_content{
+    width: 30%;
+    height: auto;
+    background-color: #7798AB;
+}
+
+
 
 .skills{
     font-weight: bolder;
     background-color: #c3e2c6;
-    position: absolute;
-    margin-top: 12%;
+    margin-top: 15%;
     margin-left: 0;
     border-radius: 20px;
-    left: 78%;
-    padding: 1em;
+    left: 79%;
     width: 15%;
     height: auto;
     text-align: center;
@@ -126,10 +232,9 @@ body{
 .skill_tecnical{
     font-weight: bolder;
     background-color: #c3e2c6;
-    position: absolute;
-    margin-top: 29%;
+    margin-top: 32%;
     border-radius: 20px;
-    left: 78%;
+    left: 79%;
     padding: 1em;
     width: 15%;
     height: auto;
@@ -158,106 +263,6 @@ body{
     line-height: 16px;
 }
 
-.portafolio{
-    width: 80px;
-    height: 20px;
-    background-color: #F2CEE6;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 20px;
-    left: 82.5%;
-    padding: 1em;
-    position: absolute;
-    margin-top: 2%;
-}
-
-.descargar{
-    width: 80px;
-    height: 20px;
-    background-color: #F2CEE6;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 20px;
-    left: 82.5%;
-    padding: 1em;
-    position: absolute;
-    margin-top: 7%;
-}
-
-.foto{
-    width: 170px;
-    height: 170px;
-    left: 7.5%;
-    position: absolute;
-    margin-top: 15px;
-    display: inline-block;
-    position: absolute;
-    overflow: hidden;
-    border-radius: 45%;
-
-}
-
-.foto img{
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.education{
-    width: 50%;
-    margin-top: 28%;
-    height: auto;
-    background-color: #CCD9E0;
-    border-radius: 20px;
-    left: 25%;
-    padding: 1em;
-    position: absolute;
-    font-weight: bold;
-    line-height: 8px;
-    text-align: center;
-
-}
-
-
-.education .sub{
-    font-size: small;
-    font-style: italic;
-    font-weight: lighter;
-    text-align: left;
-}
-
-.education .sub1{
-    font-size: small;
-    font-weight: light;
-    text-align: left;
-}
-
-.education .title{
-    font-weight: light;
-    text-align: left;
-}
-
-.blandas {
-    position: absolute;
-    text-align: center;
-    font-weight: bold;
-    width: 15%;
-    margin-top: 23%;
-    height: auto;
-    background-color: #EBE1C1;
-    border-radius: 20px;
-    left: 5%;
-    padding: 1em;
-
-}
-.blandas .sub1{
-    font-weight: normal;
-    text-align: left;
-}
-
 .experience{
     width: 50%;
     margin-top: 42%;
@@ -279,6 +284,51 @@ body{
     text-align: left;
 }
 
+
+
+.education{
+    width: 50%;
+    margin-top: 27%;
+    height: auto;
+    background-color: #CCD9E0;
+    border-radius: 20px;
+    left: 25%;
+    padding: 1em;
+    font-weight: bold;
+    line-height: 8px;
+    text-align: center;
+
+}
+
+.education a{
+    line-height: 18px;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+
+.education .sub{
+    font-size: small;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.education .sub1{
+    font-size: small;
+    font-weight: light;
+    text-align: left;
+}
+
+.education .title{
+    font-weight: light;
+    text-align: left;
+}
+
+
+
 .experience .title{
     font-weight: blond;
     text-align: left;
@@ -292,56 +342,19 @@ body{
 }
 
 .white{
-    position: absolute;
-    width: 100%;
-    height: 200xp;
-    margin-top: 70%;
-    font-weight: bolder;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .white img{
     width: 25px;
-
-
-}
-
-.referencias{
-    line-height: 9px;
-    position: absolute;
-    text-align: center;
-    font-weight: bold;
-    width: 15%;
-    margin-top: 40%;
-    height: auto;
-    background-color: #EBE1C1;
-    border-radius: 20px;
-    left: 5%;
-    padding: 1em;
-
 }
 
 
-.referencias .sub{
-    font-size: small;
-    font-weight: normal;
-    text-align: left;
-}
 
-.referencias .sub1{
-    font-size: small;
-    font-weight: normal;
-    text-align: left;
-    line-height: 10px;
 
-}
 
-.referencias .title{
-    font-weight: blond;
-    text-align: left;
-    font-size: small;
-    line-height: 12px;
-}
 
 .profile{
     width: 50%;
@@ -351,7 +364,6 @@ body{
     border-radius: 20px;
     left: 25%;
     padding: 1em;
-    position: absolute;
     font-weight: bold;
     line-height: 8px;
     text-align: center;
@@ -359,6 +371,35 @@ body{
 
 .profile .sub{
     text-align: left;
-    font-weight: normal;
     line-height: 18px;
+    font-weight: normal;
+    
 }
+
+.cursos{
+    font-weight: bolder;
+    background-color: #c3e2c6;
+    margin-top: 50%;
+    border-radius: 20px;
+    left: 79%;
+    padding: 1em;
+    width: 15%;
+    height: auto;
+    text-align: left;
+}
+
+.cursos a{
+    line-height: 18px;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+.cursos .title{
+    text-align: center;
+}
+
+.cursos .more{
+    text-align: center;
+    color: rgba(243, 34, 19, 0.884);
+} */
