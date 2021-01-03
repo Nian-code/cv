@@ -1,17 +1,21 @@
 body{
     margin: 0;
     padding: 0;
+    color: #264653;
 }
 
 .background{
     width: 100%;
     height: 100%;
     position:fixed;
-    background-color: #e0f1fa ;
+    background-color: #fffffc ;
     padding:0;
     margin:0;
     overflow-y:scroll;
     overflow-x:hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cabecera-content{
@@ -19,35 +23,44 @@ body{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 20%;
+    height: 18%;
 
 }
 
-.title{
+.cabecera-content .title_big{
     order: 1;   
-    width: 50%;
+    width: 54%;
     font-size: 4vw;
-    color: #0D1B1E;
+    color: #14213d;
     font-weight: bolder;
     font-size: xx-large;
-    font-family: 'Oswald', sans-serif;
     text-align: center;
     line-height: 13px;
 }
+
+.title{
+    width: 100%;
+    height: 20px;
+    color: #ffffff;
+    background-color: #e76f51;
+    font-weight: bold;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .foto-content{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-
+    justify-content: center;
+    width: 20%;
 }
 
 .foto{
-    width: 170px;
-    height: 170px;
-    display: inline-block;
+    width: 160px;
+    height: 160px;
     overflow: hidden;
     border-radius: 45%;
-
 }
 
 .foto img{
@@ -59,22 +72,22 @@ body{
     border-radius: 50%;
 }
 .botton{
-    width: 8%;
-    height: 50%;
+    width: 16%;
+    height: 80%;
     order: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    
+    align-content: flex-end;
 }
 .portafolio{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 50%;
     align-items: center;
-    height: 38%;
-    background-color: #F2CEE6;
+    height: 40%;
+    background-color: #e76f51;
+    color: white;
     font-weight: bold;
     border-radius: 20px;
     text-align: center;
@@ -84,31 +97,42 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 38%;
-    background-color: #F2CEE6;
+    width: 50%;
+    height: 40%;
+    background-color: #e76f51;
+    color: white;
     text-align: center;
     font-weight: bold;
     border-radius: 20px;
 }
 
-.left-content{    
+.main{
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left-content{
+    margin-top: 1%;
+    order: -1;    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 80%;
-    width: 18%;
-    margin:1em;
+    height: 82%;
+    width: 17%;
 
 }
 
 .contacto{
-    border-radius: 20px;
     padding: 1em;
-    background-color: #EBE1C1;
+    border-radius: 20px;
+    background-color: #fdffb6;
     text-align: center;
     line-height : 8px;
-    height: 10%;
+    height: 18%;
     width: 90%;
 }
 
@@ -138,7 +162,7 @@ body{
     font-weight: bold;
     width: 90%;
     height: 20%;
-    background-color: #EBE1C1;
+    background-color: #fdffb6;
     border-radius: 20px;
     padding: 1em;
     line-height: 8px;
@@ -150,162 +174,200 @@ body{
 }
 
 .referencias{ 
+    text-align: center;
     font-weight: bold;
     width: 90%;
-    height: 40%;
-    background-color: #EBE1C1;
+    height: 35%;
+    background-color: #fdffb6;
     border-radius: 20px;
     padding: 1em;
 }
+
 
 
 .referencias .sub{
     font-size: small;
     font-weight: normal;
     text-align: left;
-
 }
-
-.referencias .title{
-    font-weight: blond;
-    text-align: left;
-    font-size: small;
-}
-/* 
-.text_content{
-    width: 30%;
+.skill-content{
+    margin-top: 1%;
+    width: 17%;
     height: auto;
-    background-color: #7798AB;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-
-
 
 .skills{
+    padding: 1em;
     font-weight: bolder;
-    background-color: #c3e2c6;
-    margin-top: 15%;
-    margin-left: 0;
-    border-radius: 20px;
-    left: 79%;
-    width: 15%;
-    height: auto;
-    text-align: center;
-    line-height : 8px;
+    background-color: #90e0ef;
+    border-radius: 18px;
+    width: 100%;
+    height: 26%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+.skill_object{
+    order : 1;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+}
+.skills .title{
+    width: 100%;
+    height: 8%;
+    font-weight: bold;
+    font-size: medium;
 }
 
-.img1 .program{
-    margin-left: 20%;
-    width: 150px;
-    word-spacing: 15pt;
-    text-align: left;
-    font-size: small;
-    font-style: italic;
-    line-height : 8px;
-
+.skills .title1{    
+    order : 1;
+    width: 80%;
+    height: 8%;
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 8%;
 }
 
 .skills img{
-    margin-top: 4%;
-    width: 30px;
-    height: 30px;
+    width: 75%;
+    height: 70%;
 }
 
-
-.skills .img2 img{
-    margin-left: 4%;
-    width: 30px;
-    height: 30px;
-}
-
-
-.img2 .program{
-    margin-left: 20%;
-    width: 150px;
-    word-spacing: 4pt;
-    text-align: left;
-    font-size: small;
-    font-style: italic;
-    line-height : 8px;
-
+.skills .carta{
+    width: 16%;
+    height: 25%;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-size: smaller;
 }
 
 .skill_tecnical{
-    font-weight: bolder;
-    background-color: #c3e2c6;
-    margin-top: 32%;
-    border-radius: 20px;
-    left: 79%;
     padding: 1em;
-    width: 15%;
-    height: auto;
+    font-weight: bolder;
+    background-color: #90e0ef;
+    border-radius: 20px;
+    width: 100%;
+    height: 30%;
     text-align: center;
-}
 
-.skill_tecnical img{
-    margin-left: 5%;
-    width: 45px;
-    height: 30px;
 
 }
+
 
 .skill_tecnical .titulos_skils{
+    width: 100%;
+    margin: 1em;
     text-align: left;
     font-weight: bold;
     font-size: medium;
 }
 
-.skill_tecnical .img1{
-    width: auto;
+.skill_tecnical .programas{
+    margin: 1em;
+    width: 90%;
     text-align: left;
-    margin-top: 7px;
-    font-weight: 100;
-    font-size: medium;
-    line-height: 16px;
+    font-weight: normal;
 }
-
-.experience{
-    width: 50%;
-    margin-top: 42%;
-    height: auto;
-    background-color: #CCD9E0;
-    border-radius: 20px;
-    left: 25%;
+.cursos{
     padding: 1em;
-    position: absolute;
-    font-weight: bold;
-    line-height: 8px;
-    text-align: center;
-    margin-bottom: auto;
+    width: 100%;
+    font-weight: bolder;
+    background-color: #90e0ef;
+    border-radius: 20px;
+    text-align: left;
 }
+
+.cursos a{
+    line-height: 18px;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+.cursos .title{
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+}
+
+.cursos .more{
+    text-align: center;
+    color:#e63946;
+}
+.center-content{
+    border-radius: 2%;
+    background-color: #caffbf;
+    margin-top: 1%;
+    order:-1;
+    width: 42%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    font-weight: bold;
+    line-break: 10px;
+}
+
 
 .experience .sub{
     font-size: small;
     font-weight: light;
     text-align: left;
 }
+.title_job{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    font-size: small;
+}
+.title_job1{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    line-height: 15px;
+    font-size: small;
+}
 
-
+.detalles{
+    font-weight: light;
+    text-align: left;
+}
 
 .education{
-    width: 50%;
-    margin-top: 27%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
     height: auto;
-    background-color: #CCD9E0;
-    border-radius: 20px;
-    left: 25%;
     padding: 1em;
-    font-weight: bold;
-    line-height: 8px;
+    margin-top: 0;
     text-align: center;
-
+    font-weight: bold;
 }
 
 .education a{
     line-height: 18px;
     text-align: left;
-    font-weight: bold;
-    color: black;
+    color: #14213d;
     text-decoration: none;
+    font-weight: bold;
 }
 
 
@@ -322,47 +384,9 @@ body{
     text-align: left;
 }
 
-.education .title{
-    font-weight: light;
-    text-align: left;
-}
-
-
-
-.experience .title{
-    font-weight: blond;
-    text-align: left;
-}
-
-.detalles{
-    font-weight: light;
-    text-align: left;
-    line-height: normal;
-    font-weight: 500;
-}
-
-.white{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.white img{
-    width: 25px;
-}
-
-
-
-
-
-
 .profile{
-    width: 50%;
-    margin-top: 15%;
-    height: auto;
-    background-color: #CCD9E0;
-    border-radius: 20px;
-    left: 25%;
+    order:-1;
+    height: 20%;
     padding: 1em;
     font-weight: bold;
     line-height: 8px;
@@ -376,30 +400,13 @@ body{
     
 }
 
-.cursos{
-    font-weight: bolder;
-    background-color: #c3e2c6;
-    margin-top: 50%;
-    border-radius: 20px;
-    left: 79%;
-    padding: 1em;
-    width: 15%;
-    height: auto;
-    text-align: left;
+.white{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.cursos a{
-    line-height: 18px;
-    font-weight: normal;
-    color: black;
-    text-decoration: none;
+.white img{
+    width: 25px;
 }
-
-.cursos .title{
-    text-align: center;
-}
-
-.cursos .more{
-    text-align: center;
-    color: rgba(243, 34, 19, 0.884);
-} */
