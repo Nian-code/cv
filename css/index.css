@@ -321,9 +321,7 @@ body{
     width: 100%;
     height: auto;
     padding: 1em;
-    font-weight: bold;
-    line-break: 10px;
-    
+    font-weight: bold;    
 }
 
 
@@ -351,7 +349,7 @@ body{
 
 details{
     margin: 2%;
-    font-weight: light;
+    font-weight: lighter;
     text-align: left;
 }
 
@@ -389,7 +387,7 @@ details{
 .education .tit1{
     width: 100%;
     font-size: medium;
-    font-weight: light;
+    font-weight: bold;
     text-align: left;
     line-height: 18px;
 }
