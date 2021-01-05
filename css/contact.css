@@ -41,6 +41,12 @@ input{
     width: 200px;
 }
 
+#enviar{
+    background-color: rgb(163, 251, 243);
+    font-weight: bold;
+    border-color: black;
+}
+
 footer{
     margin-top: 3%;
     display: flex;
