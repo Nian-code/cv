@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     color: #264653;
+    align-items: center;
 }
 
 .background{
@@ -74,38 +75,29 @@ header .title_big{
     border-radius: 50%;
 }
 .botton{
-    width: 16%;
-    height: 80%;
+    width: 20%;
+    height: 100%;
     order: 1;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-content: flex-end;
+    align-content: space-around;
+    flex-wrap: wrap;
 }
-.portafolio{
+.button{
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     align-items: center;
-    height: 40%;
+    height: 26%;
     background-color: #e76f51;
     color: white;
     font-weight: bold;
     border-radius: 20px;
     text-align: center;
 }
-
-.descargar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 40%;
-    background-color: #e76f51;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 20px;
+.button a{
+    color:white;
+    text-decoration: none;
 }
 
 .main{
@@ -188,9 +180,11 @@ header .title_big{
 
 
 .referencias .sub{
+    width: 100%;
     font-size: small;
     font-weight: normal;
     text-align: left;
+    margin-left: 2%;
 }
 .skill-content{
     margin-top: 1%;
@@ -238,18 +232,19 @@ header .title_big{
 }
 
 .skills img{
-    width: 75%;
-    height: 70%;
+    width: 73%;
+    height: 68%;
 }
 
 .skills figure{
     width: 16%;
     height: 25%;
-    margin: 1em;
+    margin: 0.7em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    justify-items: center;
 }
 
 .skills figure figcaption{
@@ -333,13 +328,12 @@ header .title_big{
     font-weight: bold;    
 }
 
-
 .experience .sub{
     margin: 2%;
     width: 100%;
     font-size: small;
     font-weight: normal;
-    
+    line-height: 10%;
 }
 .title_job{
     text-align: left;
@@ -422,13 +416,13 @@ summary{
     
 }
 
-.white{
+footer{
     margin-top: 3%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-.white img{
+footer img{
     width: 25px;
 }
