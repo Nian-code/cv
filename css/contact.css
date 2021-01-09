@@ -1,7 +1,21 @@
-html{
-    font-size: 62.5%;
+:root{
+    --primary-color:  #ffd5c2;
+    --second-color:  #ade8f4;
+    --background-color: #FEFFFE;
+    --title-size: 2.4rem;
+    --title: 2rem;
+    --font-size:  1.6rem;
+    --title-header-family: 'Redressed', cursive;
+    --width: 100vw;
+    --font-color:  #353945;
+
+   
 }
 
+html{
+    font-size: 62.5%;
+    
+}
 
 * {
 	margin: 0;
@@ -10,67 +24,77 @@ html{
 }
 
 body{
-    color: #264653;
-    background-color: #FEFFFE;
+    background-color: var(--background-color);
     align-items: center;
     display: flex;
     flex-direction: column;
+    color: var(--font-color)
 }
 
 header{
-    width: 100vw;
+    min-width: var(--width);
     height: auto;
-    background-color: #fcd5ce;
+    min-height: 5rem;
+    background-color: var(--background-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0  10rem;
+    flex-wrap: wrap;
 }
 
 .main-nav{
-    width: calc(55%);
     display: flex;
     list-style: none;
     justify-content: space-around;
 }
 
 .main-nav li{
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main-nav li a{
     text-decoration: none;
-    color: #9C0D38;
+    color: var(--font-color);
     font-weight: bold;
     font-size: 1.4rem;
+    margin-right: 1rem;
+    flex-grow: 1;
 }
 
 .main-nav li a:hover{
-    color: white;
+    color: #9C0D38;
 }
 
 .main_name{
-    font-family: 'Redressed', cursive;
-    font-size: 2.2rem;
+    font-family: var(--title-header-family);
+    font-size: 2.8rem;
     color:black;
+}
+
+main{
+    width: var(--width);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:  -webkit-linear-gradient(30deg, #f0efeb 40%, var(--background-color) 60%);
 }
 
 h1{
     margin: 1rem;
     font-size: 3rem;
 }
-main{
-    width: 25%;
-    height: 350px;
-}
-
 form{
     margin-top: 10px;
-    height: 50%;
+    height: 40vh;
+    width: 30vw;
+    min-width: 320px;
+    background-color: var(--background-color);
     border-radius: 4%;
     font-size: 1.6rem;
     border-style:dotted;
-    border-color:rgb(182, 182, 155);
+    border-color: var(--font-color);
     border-width: medium;
     display: flex;
     flex-direction: column;
@@ -94,14 +118,14 @@ input{
     border-color: black;
 }
 
+
 footer{
-    position: absolute;
+    margin-top: 3%;
+    width: var(--width);
     display: flex;
     justify-content: center;
-    width: 100%;
-    bottom: 0;
-    color: white;
-    margin-bottom: 1%;
+    align-items: flex-end;
+    margin-bottom: 1vh;
 }
 
 footer img{

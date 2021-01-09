@@ -74,15 +74,12 @@ header{
 
 main{
     width: var(--width);
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     background:  -webkit-linear-gradient(30deg, #f0efeb 40%, var(--background-color) 60%);
 }
-.fondo{
-    width: 50vw;
-    background-color: var(--background-color);
-}
+
 .home{
     margin-top: 4rem;
     width: 50%;
