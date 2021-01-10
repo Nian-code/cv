@@ -129,6 +129,11 @@ header{
     align-items: center;
 } 
 
+.redes img{
+    width: 25px;
+    height: 25px;
+}
+
 .down-button{
     height: 3rem;
     width: 15rem;
