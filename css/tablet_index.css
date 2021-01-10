@@ -1,0 +1,44 @@
+:root{
+    --primary-color:  #ffd5c2;
+    --second-color:  #ade8f4;
+    --background-color: #FEFFFE;
+    --title-size: 2.4rem;
+    --title: 2rem;
+    --font-size:  1.6rem;
+    --title-header-family: 'Redressed', cursive;
+    --width: 100vw;
+    --font-color:  #353945;
+
+   
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media(min-width: 600px){
+    body{
+        background-color: #ade8f4;
+        position: static;
+    }
+}
+
+@media(min-width: 800px){
+    body{
+        background-color: #ffd5c2;
+    }
+
+    main{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
