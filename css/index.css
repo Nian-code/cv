@@ -25,7 +25,8 @@ html{
 
 body{
     background-color: var(--background-color);
-    color: var(--font-color)
+    color: var(--font-color);
+    overflow: auto;
 }
 
 header{
@@ -146,4 +147,29 @@ header{
     text-decoration: none;
     font-size: var(--font-size);
     color: var(--font-color);
+}
+
+.about-me{
+    margin: 0 1rem;
+    height: 16rem;
+}
+
+.about-me h2{
+    font-size: var(--title);
+    color: var(--font-color);
+    text-align: center;
+    font-weight: bolder;
+
+
+}
+
+.about-me p{
+    font-size: var(--font-size);
+    margin: 0.5rem 0;
+}
+
+.about-me .frase-platzi{
+    text-align: center;
+    font-size: var(--title);
+    font-weight: bold;
 }
