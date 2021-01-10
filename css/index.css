@@ -38,9 +38,6 @@ header{
     align-items: center;
 }
 
-.main-nav{
-    display: none;
-}
 .main-nav-mobile{
     width: var(--width);
     min-width: 320px;
