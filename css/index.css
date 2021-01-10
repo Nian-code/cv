@@ -39,6 +39,13 @@ header{
     align-items: center;
 }
 
+main{
+    background-color: aqua;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
 .main-nav-mobile{
     width: var(--width);
     min-width: 320px;
@@ -64,6 +71,7 @@ header{
 }
 
 .sect-img-hello{
+    width: 100vw;
     height: 35vh;
     min-width: 320px;
     overflow: hidden;
@@ -105,7 +113,6 @@ header{
 }
 
 .home{
-    
     padding: 2rem 0;
     background-color: var(--background-color);
     display: flex;
@@ -150,11 +157,11 @@ header{
 }
 
 .about-me{
-    margin: 0 1rem;
+    padding: 0 1rem;
     height: 16rem;
 }
 
-.about-me h2{
+h2, .frase-platzi{
     font-size: var(--title);
     color: var(--font-color);
     text-align: center;
@@ -163,13 +170,67 @@ header{
 
 }
 
-.about-me p{
+p{
     font-size: var(--font-size);
     margin: 0.5rem 0;
 }
 
-.about-me .frase-platzi{
-    text-align: center;
-    font-size: var(--title);
+.educaction h3{
+    font-size: var(--font-size);
+   
+}
+
+.education{
+    background-color: rgb(160, 160, 200);
+    text-align: left;
+    padding: 1rem;
+    font-size: var(--font-size);
+}
+
+form{
+    margin-top: 10px;
+    height: 40vh;
+    width: 30vw;
+    min-width: 320px;
+    background-color: var(--background-color);
+    border-radius: 4%;
+    font-size: 1.6rem;
+    border-style:dotted;
+    border-color: var(--font-color);
+    border-width: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+form span{
+    background-color: rgb(163, 251, 243);
+    text-align: left;
     font-weight: bold;
 }
+input{
+    width: 200px;
+}
+
+#enviar{
+    background-color: rgb(163, 251, 243);
+    font-weight: bold;
+    border-color: black;
+}
+
+
+footer{
+    margin-top: 3%;
+    width: var(--width);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1vh;
+}
+
+footer img{
+    width: 25px;
+}
+
