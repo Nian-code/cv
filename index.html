@@ -9,8 +9,9 @@
         <meta name="robots" content="index,follow">
         <link rel="shortcut icon"
             href="https://img.icons8.com/nolan/25/parse-from-clipboard.png">
-        <title>Tecnológo en Telecomunicaciones / Analista de datos</title>
+        <title>Analista de datos</title>
         <link rel="stylesheet" href="css/index.css">
+
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Redressed&family=Roboto:wght@100&display=swap" rel="stylesheet">
     </head>
 
@@ -39,7 +40,7 @@
              alt="portada_programación">
             </picture>
         </section>
-        <section class="home">
+        <section class="photo_redes">
             <figure class="photo_profile">
                 <img
                     src = "https://i.pinimg.com/236x/ee/92/70/ee9270767cf6770010b8a9db489468d6--monna-lisa-leonardo.jpg"
@@ -90,23 +91,21 @@
         </section>
         <section class="skills">
             <h2>Habilidades y lenguajes</h2>
-            <p>Análisis de datos
-            <progress max="100" value="45" >70%</progress></p>
-            <p>Github <progress max="100" value="75" ></progress></p></p>
-            <p>Python <progress max="100" value="65" ></progress></p></p>
-            <p>Lenguaje R <progress max="100" value="40" ></progress></p></p>
-            <p>HTML y CSS<progress max="100" value="45" ></progress></p></p>
-            <p>Network <progress max="100" value="80" ></progress></p></p>
-            <p>Linux <progress max="100" value="70" ></progress></p></p>
-            <p>Virtualización <progress max="100" value="80" ></progress></p></p>
-            <hr/>
-            <p>English <progress max="100" value="60"></progress></p></p>
-            <p>Español <progress max="100" value="80"></progress></p></p>
+            <label><span>Análisis de datos</p><progress max="100" value="45"></progress></span></label>
+            <label><span>Github</p> <progress max="100" value="75" ></progress></span></label>
+            <label><span>Python</p> <progress max="100" value="65" ></progress></span></label>
+            <label><span>Lenguaje R</p> <progress max="100" value="40" ></progress></span></label>
+            <label><span>HTML y CSS</p><progress max="100" value="45" ></progress></span></label>
+            <label><span>Network </p><progress max="100" value="80" ></progress></span></label>
+            <label><span>Linux</p> <progress max="100" value="70" ></progress></span></label>
+            <label><span>Virtualización</p><progress max="100" value="80" ></progress></span></label>
+            <label><span>English</p> <progress max="100" value="60"></progress></span></label>
+            <label><span>Español</p> <progress max="100" value="80"></progress></span></label>
         </section>
         <section class="proyectos">
             <h2>Proyectos</h2>
-        </section class="form">
-        <section>
+        </section>
+        <section  class="form">
             <h1>Dejame un mensaje</h1>
             <form action="">
                 <label for="nombre">
@@ -122,9 +121,9 @@
                     <input type="text" id="email" placeholder="Tu email" name="email" autocomplete="email" required>
                 </label>
                 <label for="mensaje">
-                    <span>Mensaje:</span>
-                    <input type="text" id="mensaje" placeholder="Tu mensaje" name="mensaje">
-                </label>
+                    <p>Mensaje:</p>
+                    <textarea  id="mensaje" placeholder="Tu mensaje" name="mensaje" 
+                        rows="5" cols="40"></textarea>
                 <input type="submit" id="enviar">
             </form>
         </section>
