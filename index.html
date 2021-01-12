@@ -11,7 +11,7 @@
             href="https://img.icons8.com/nolan/25/parse-from-clipboard.png">
         <title>Analista de datos</title>
         <link rel="stylesheet" href="css/index.css">
-
+        <link rel="stylesheet" href="css/tablet_index.css" media="screen and (min-width: 720px)">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Redressed&family=Roboto:wght@100&display=swap" rel="stylesheet">
     </head>
 
@@ -75,15 +75,23 @@
         </section>
         <section class="education">
             <h2>Educación</h2>
-            <h4>¿Qué he aprendido?</h4>
-            <h3>Carrera Ingeligencia Artificial</h3>
-            <span>Platzi 2020 Julio - Diciembre</span>
-            <h3>Tecnologo en Diseño, implementación y Manetenimiento de Sistemas de Telecomunicaciones</h2>
-            <span>Servicio Nacional de Aprendizaje</span>
-            <span class="fecha-duracion">2018-2020</span>
-            <h3>Técnico en Sistemas</h3>
-            <span>Servicio Nacional de Aprendizaje</span>
-            <span class="fecha-duracion">2016 - 2017</span>
+            <h4 class="what-learn">¿Qué he aprendido?</h4>
+            <ul>
+                <li>
+                    <h3>Carrera Ingeligencia Artificial</h3>
+                    <span>Platzi 2020 Julio - Diciembre</span>
+                    </li>
+                <li>
+                    <h3>Tecnologo en Diseño, implementación y Manetenimiento de Sistemas de Telecomunicaciones</h2>
+                    <span>Servicio Nacional de Aprendizaje</span>
+                    <span class="fecha-duracion">2018-2020</span>    
+                </li>
+                <li>
+                    <h3>Técnico en Sistemas</h3>
+                    <span>Servicio Nacional de Aprendizaje</span>
+                    <span class="fecha-duracion">2016 - 2017</span>
+                </li>
+            </ul>        
         </section>
         <section class="awards">
             <h2>Premios</h2>
@@ -105,8 +113,8 @@
         <section class="proyectos">
             <h2>Proyectos</h2>
         </section>
-        <section  class="form">
-            <h1>Dejame un mensaje</h1>
+        <section  class="form-content">
+            <h2>Dejame un mensaje</h2>
             <form action="">
                 <label for="nombre">
                     <span>Nombre:</span>
@@ -121,9 +129,11 @@
                     <input type="text" id="email" placeholder="Tu email" name="email" autocomplete="email" required>
                 </label>
                 <label for="mensaje">
-                    <p>Mensaje:</p>
+                    <span>Mensaje:</span>
+                    <p>
                     <textarea  id="mensaje" placeholder="Tu mensaje" name="mensaje" 
-                        rows="5" cols="40"></textarea>
+                        rows="5" cols="30"></textarea>
+                    </p>
                 <input type="submit" id="enviar">
             </form>
         </section>
