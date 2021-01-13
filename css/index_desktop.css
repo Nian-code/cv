@@ -1,200 +1,45 @@
-:root{
-    --primary-color:  #ffd5c2;
-    --second-color:  #ade8f4;
-    --background-color: #FEFFFE;
-    --title-size: 2.4rem;
-    --title: 2rem;
-    --font-size:  1.6rem;
-    --title-header-family: 'Redressed', cursive;
-    --width: 100vw;
-    --font-color:  #353945;
-
-   
-}
-
-html{
-    font-size: 62.5%;
-    
-}
-
-* {
-	margin: 0;
-	padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: var(--background-color);
-    color: var(--font-color)
-}
-
-header{
-    min-width: var(--width);
-    height: auto;
-    min-height: 5rem;
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.main-nav{
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
-.main-nav li{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main-nav li a{
-    text-decoration: none;
-    color: var(--font-color);
-    font-weight: bold;
-    font-size: 1.4rem;
-    margin-right: 1rem;
-    flex-grow: 1;
-}
-
-.main-nav li a:hover{
-    color: #9C0D38;
-}
-
-.main_name{
-    font-family: var(--title-header-family);
-    font-size: 2.8rem;
-    color:black;
-}
-
 main{
-    width: var(--width);
-    height: auto;
-    display: flex; 
+    background-color: #ffd5c2;
     justify-content: center;
-    background:  -webkit-linear-gradient(30deg, #f0efeb 40%, var(--background-color) 60%);
-}
-
-.home{
-    margin-top: 4rem;
-    width: 50%;
-    min-width: 320px;
-    max-width: 570px;
-    height: auto;
-    min-height: 370px;
-    padding-top: 1rem;
-    background-color: var(--background-color);
-    font-size: var(--font-size);
-    box-shadow:
-       inset 0 -0.7em 0.7rem rgba(0,0,0,0.1),
-             0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1rem rgba(0,0,0,0.3);
-}
-
-.photo_text{
-    margin-top: 1.5rem;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-.photo_text section{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-
-.home .photo_profile{
     text-align: center;
 }
 
-.home .photo_profile img{
-    width: 18.5rem;
-    height: 18.5rem;
-    min-width: 120px;
-    border-radius: 50%;
+.sect-img-hello{
+    width: 70%;
+    height: 26rem;
 }
 
-.nom_profesion{
-    font-family: var(--title-header-family);
-    color: black;
-    font-size: var(--title-size); 
-    margin: 1rem 0;
+.hello{
+    width: 50vw;
 }
 
-hr {
-    width: 5rem;
-    height: 3px;
-    background-color: black;
-    border-color: transparent;
-    margin: 1rem;
+.photo_redes{
+    width: 30%;
+    min-width: 200px;
+    height: 26rem;
+    order:0;
 }
 
-.home .profile{
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
+.skills{
+    order: 0;
+    width: 40%;
 }
 
-.home .profile p{
-    padding: 2rem;
+.proyectos{
+    order : 1;
+    width: 60%;
+    height: auto;
 }
 
-.profile .sec-button{
+.information{
+    order: 2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-.profile section a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.profile section span{
-    margin-right: 1rem;
-    width: 30vw;
-    min-width: 90px;
-    max-width: 115px;
-    height: 3.5rem;
-    background-color: var(--primary-color);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
 }
 
-.profile section a:hover{
-    color: #9C0D38;
+.about-me,.education, .awards{
+    order: 2;
+    min-width: 20vw;
 }
 
-
-.profile section span:active{
-    background-color: #BEE3DB;
-}
-
-.redes{
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.home .redes img{
-    height: auto;
-    width: 20px;
-    margin: 3px;
-}
-
-footer{
-    margin-top: 3%;
-    width: var(--width);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 1vh;
-}
-
-footer img{
-    width: 25px;
-}
