@@ -1,7 +1,11 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 main{
-    background-color: #ffd5c2;
-    justify-content: center;
-    text-align: center;
+    width: 85%;
+
 }
 
 .sect-img-hello{
@@ -40,6 +44,7 @@ main{
 
 .about-me,.education, .awards{
     order: 2;
-    min-width: 20vw;
+    width: 50%;
+    min-width: 10vw;
 }
 

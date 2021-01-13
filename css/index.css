@@ -1,6 +1,6 @@
 :root{
     --primary-color:  #ffd5c2;
-    --second-color:  #ade8f4;
+    --second-color:  #ffb703;
     --background-color: #FEFFFE;
     --title-size: 2.7rem;
     --title: 2rem;
@@ -25,7 +25,7 @@ html{
 }
 
 body{
-    background-color: var(--background-color);
+    background: linear-gradient(-10deg, var(--primary-color) 50%, #fff 50%);
     color: var(--font-color);
     overflow: auto;
 }
@@ -33,7 +33,7 @@ body{
 header{
     width: var(--width);
     min-width: var(--min-width);
-    background-color: var(--background-color);
+    background-color: #fcd5ce;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -68,6 +68,7 @@ main{
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--background-color);
 }
 .sect-img-hello{
     width: var(--width);
@@ -191,7 +192,6 @@ p{
     min-width: var(--min-width);
     width: var(--width);
     height: auto;
-    background-color: rgb(160, 160, 200);
     text-align: left;
     font-size: var(--font-size-bold);
     padding: 1.5rem 2rem;
@@ -216,7 +216,6 @@ ul span{
 .awards{
     width: var(--width);
     min-width: var(--min-width);
-    background-color: palegoldenrod;
     padding: 1rem 1.5rem;
     text-align: center;
 }
@@ -229,7 +228,6 @@ ul span{
     text-align: left;
     padding: 1rem;
     font-size: var(--font-size);
-    background-color: var(--background-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -243,7 +241,7 @@ ul span{
     padding: 1rem 3rem;
     min-width: var(--min-width);
     width: var(--width);
-    background-color: orange;
+    background-color: var(--second-color);
     height: 30rem;
 }
 .form-content{
@@ -253,7 +251,6 @@ ul span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--background-color);
 }
 form{
     display: flex;
@@ -266,14 +263,12 @@ form{
     width: 60%;
     min-width: 32rem;
     max-width: 40rem;
-    background-color: var(--background-color);
     font-size: var(--font-size);  
     text-align: center;  
 }
 
 
 form span{
-    background-color: rgb(163, 251, 243);
     text-align: left;
     font-weight: bold;
 }
@@ -284,19 +279,18 @@ input{
 #enviar{
     width: 6rem;
     height: 3rem;
-    background-color: rgb(163, 251, 243);
     font-weight: bold;
     border-color: black;
 }
 
 
 footer{
-    margin-top: 1rem;
+    padding: 1rem 0;
     width: var(--width);
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 1vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--second-color);
 }
 
 
