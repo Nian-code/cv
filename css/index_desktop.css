@@ -10,7 +10,7 @@ main{
 
 .sect-img-hello{
     width: 70%;
-    height: 31rem;
+    height: 33rem;
 }
 
 .hello{
@@ -20,14 +20,14 @@ main{
 .photo_redes{
     width: 30%;
     min-width: 200px;
-    height:  31rem;
+    height:  33rem;
     order:0;
     background-color: #FEFFFE;
 }
 
 .photo_profile{
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: 260px;
 }
 
 .skills{
