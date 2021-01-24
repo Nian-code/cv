@@ -9,25 +9,41 @@ main{
 }
 
 .sect-img-hello{
-    width: 70%;
+    width: 100vw;
     height: 33rem;
 }
 
 .hello{
-    width: 50vw;
+    margin-right: 15rem;
+    width: 40vw;
 }
 
 .photo_redes{
-    width: 30%;
+    position: absolute;
+    align-items: flex-end;
+    width: 75vw;
     min-width: 200px;
     height:  33rem;
     order:0;
-    background-color: #FEFFFE;
+    background-color:transparent;
 }
 
 .photo_profile{
     width: auto;
-    height: 260px;
+    height: 270px;
+}
+
+.photo_profile img{
+    border: 0.2rem solid transparent;
+}
+.redes-cv{
+    margin-right: 4rem;
+}
+
+.redes-cv .redes{
+    border-radius: 1rem;
+    height: 3rem;
+    background-color: white;
 }
 
 .skills{
