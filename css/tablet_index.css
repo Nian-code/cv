@@ -23,6 +23,7 @@ main{
 .about-me,.education, .awards{
     order: 2;
     width: 50vw;
+    margin-top: 2rem;
 }
 
 .form-content{

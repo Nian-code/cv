@@ -1,6 +1,6 @@
 :root{
-    --primary-color:  #fcd5ce;
-    --second-color:  #ffb703;
+    --primary-color:  #D4F5FC;
+    --second-color:  #ECA1FF;
     --background-color: #FEFFFE;
     --title-size: 2.7rem;
     --title: 2rem;
@@ -8,8 +8,10 @@
     --font-size-bold:  1.4rem;
     --title-header-family: 'Redressed', cursive;
     --width: 100vw;
-    --font-color:  #353945;
+    --font-color:  black;
     --min-width: 320px;
+    --border : 1px solid;
+    --border-radius: 20px;
    
 }
 
@@ -33,11 +35,13 @@ body{
 header{
     width: var(--width);
     min-width: var(--min-width);
-    background-color: var(--primary-color);
+    background-color: var(--primary-color);  
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center;    
+    height: 7rem;
+    box-shadow: 2px 2px 5px #999;
 }
 
 .main-nav-mobile{
@@ -79,10 +83,12 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .sect-img-hello img{
     min-width: var(--min-width);
     width: var(--width);
+    /* transform: scaleX(-1); */ 
 }
 
 
@@ -94,7 +100,7 @@ main{
     position: absolute;
     background-color: var(--primary-color);
     color: black;
-    opacity: .96;    
+    border-radius: 2rem;
 }
 
 
@@ -181,7 +187,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
 }
 
 h2, .frase-platzi{
@@ -207,6 +215,10 @@ p{
     font-size: var(--font-size-bold);
     padding: 1.5rem 2rem;
     padding-left: 3rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -230,6 +242,9 @@ ul span{
     min-width: var(--min-width);
     padding: 1rem 1.5rem;
     text-align: center;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
 }
 /* skills */
 .skills{
@@ -243,6 +258,9 @@ ul span{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
 }
 
 .skills h2{
