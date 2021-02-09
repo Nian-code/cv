@@ -60,7 +60,7 @@
                         <img src="https://img.icons8.com/ios-filled/90/000000/github.png" alt="icono-github"/></a>
             </figure>
             <section class="down-button">
-                <span><a href="#" alt="download-cv">Descargar CV</a></span>
+                <span><a href="https://www.canva.com/design/DAETuIR1zvo/jYKqXNroIwusYv35unXFqw/view?utm_content=DAETuIR1zvo&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" alt="download-cv">Descargar CV</a></span>
             </section></section>    
         </section>
         <section class="information">
@@ -69,11 +69,9 @@
             <p>Soy Nicoll, estudiante de analisis de datos, con diplomado en programación y codificación
                de la universidad Javeriana.
                Me encanta el desarrollo de software y crear código util para solucionar diferentes problemas.
-            </p><p>
-               Pienso que la tecnología no tiene límite.
-            </p><p class="frase-platzi">
-               ¡Never stop to learn!
             </p>
+            <p>Pienso que la tecnología no tiene límite.</p>
+            <p class="frase-platzi">¡Never stop to learn!</p>
         </section>
         <section class="education">
             <h2>Educación</h2>
@@ -120,9 +118,9 @@
         </section>
     </main>
     <footer>
-        <section  id="form"class="form-content">
+        <section  id="form" class="form-content">
             <h2>Dejame un mensaje</h2>
-            <form action="">
+            <form action="" name = "form_contact">
                 <label for="nombre">
                     <span>Nombre:</span>
                     <input type="text" id="nombre" placeholder="Tu nombre" name="nombre" autocomplete="name" required>
@@ -141,8 +139,9 @@
                     <textarea  id="mensaje" placeholder="Tu mensaje" name="mensaje" 
                         rows="5" cols="30"></textarea>
                     </p>
-                <input type="submit" id="enviar">
+                <input type="submit" id="enviar" onclick="getdata()">
             </form>
+            <script src="form.js"></script>
         </section>
             <figure class="redes">
                 <a title="Gmail" href="mailto:nianmejia16@gmail.com">
