@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/DTD/loose.dtd">
+<!-- saved from url=(0030)https://10.120.121.3/index.cgi -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>[Michel Prieto] - Main</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+</head>
+
+<body>
+<table class="maintable" cellpadding="0" align="center" cellspacing="0">
+  <tbody><tr>
+    <td height="70">
+
+    <img src="./[Michel Prieto] - Main_files/P5B-300.gif" alt="PowerBeam M5 300">
+    
+    </td>
+    <td valign="bottom" align="right">
+
+<img src="./[Michel Prieto] - Main_files/airos_logo.png">
+</td>
+  </tr>
+  <tr class="menu">
+    <td height="26" style="white-space: nowrap;">
+     <a href="https://10.120.121.3/ubnt.cgi"><img src="./[Michel Prieto] - Main_files/ubnt.png" alt="UBNT" border="0"></a><a href="https://10.120.121.3/index.cgi"><img src="./[Michel Prieto] - Main_files/main_top.png" alt="Main" border="0"></a><a href="https://10.120.121.3/link.cgi"><img src="./[Michel Prieto] - Main_files/link.png" alt="Wireless" border="0"></a><a href="https://10.120.121.3/network.cgi"><img src="./[Michel Prieto] - Main_files/net.png" alt="Network" border="0"></a><a href="https://10.120.121.3/advanced.cgi"><img src="./[Michel Prieto] - Main_files/4dv.png" alt="Advanced" border="0"></a><a href="https://10.120.121.3/services.cgi"><img src="./[Michel Prieto] - Main_files/srv.png" alt="Services" border="0"></a><a href="https://10.120.121.3/system.cgi"><img src="./[Michel Prieto] - Main_files/system.png" alt="System" border="0"></a></td>
+	<td align="right" valign="top" style="white-space: nowrap;">
+		<a id="unms_link" href="https://unms.com/">
+		<img id="unms_status_btn" class="unms_status" src="./[Michel Prieto] - Main_files/airos-unms-grey.png"></a>&nbsp;
+		<select id="tools" onchange="showTool(this);">
+			<option value="" selected="">Tools:</option>
+			<option value="signal_gui.cgi">Align Antenna...</option>
+			
+			<option value="survey.cgi?mode=tool">Site Survey...</option>
+			<option value="discovery.cgi">Discovery...</option>
+			
+			<option value="pingtest.cgi">Ping...</option>
+			<option value="traceroute.cgi">Traceroute...</option>
+			<option value="sptest.cgi">Speed Test...</option>
+			
+			<option value="airview.cgi">airView...</option>
+			
+		</select>&nbsp;<input type="button" value="Logout" onclick="window.location.href=&#39;/logout.cgi&#39;+&#39;?&#39;+(new Date().getTime());">
+    </td>
+  </tr>
+
+  <tr>
+<td colspan="2" class="centr">
+
+
+
+<br>
+	<table border="0" cellpadding="0" cellspacing="0" class="linktable">
+	  <tbody><tr><th colspan="2">Status</th></tr>
+	  <tr><td valign="top" style="width: 50%">
+		<div class="fieldset" id="general_info">
+		  <div id="devinfo" class="row">
+			<span class="label">Device Model:</span>
+			<span class="value" id="devmodel">PowerBeam M5 300</span>
+		  </div>
+		  <div id="hostinfo" class="row">
+			<span class="label">Device Name:</span>
+			<span class="value" id="hostname">Michel Prieto</span>
+		  </div>
+		  <div id="netmodeinfo" class="row">
+			<span class="label">Network Mode:</span>
+			<span class="value" id="netmode">Bridge</span>
+		  </div>
+		  <div id="wmodeinfo" class="row">
+			<span class="label">Wireless Mode:</span>
+			<span class="value" id="wmode">Station</span>
+		  </div>
+		  <div id="astatusinfo" class="row" style="display: none;">
+			<span class="label">airView Status:</span>
+			<span class="value" id="astatus"></span>
+		  </div>
+		  <div id="ssidinfo" class="row">
+			<span class="label" id="essid_label">SSID:</span>
+			<span class="value" id="essid">AP RESERVA DEL CAMPO</span>
+		  </div>
+		  <div id="securityinfo" class="row">
+			<span class="label">Security:</span>
+			<span class="value" id="security">WPA2-AES</span>
+		  </div>
+		  <div id="fwversioninfo" class="row">
+			<span class="label">Version:</span>
+			<span class="value" id="fwversion">v6.3.2 (XW)</span>
+		  </div>
+		  <div id="uptimeinfo" class="row">
+			<span class="label">Uptime:</span>
+			<span class="value" id="uptime">01:06:35</span>
+		  </div>
+		  <div id="dateinfo" class="row">
+			<span class="label">Date:</span>
+			<span class="value" id="date">2017-02-10 01:06:23</span>
+		  </div>
+		</div>
+
+		<div class="fieldset" id="radioinfo">
+		  <div id="freqinfo" class="row">
+			<span class="label">Channel/Frequency:</span>
+			<span class="value">
+			  <span id="channel">43</span>
+			  <span>&nbsp;/&nbsp;</span>
+			  <span id="frequency">5215 MHz</span>
+			</span>
+		  </div>
+		  <div id="chanwidthinfo" class="row">
+			<span class="label">Channel Width:</span>
+			<span class="value">
+			  <span id="wd">20 MHz</span>
+			  <span id="ext_chan" style="display: none;"></span>
+			</span>
+		  </div>
+		  <div id="freqwidthinfo" class="row">
+			<span class="label">Frequency Band:</span>
+			<span class="value">
+			  <span id="freqstart">5205</span>
+			  <span>&nbsp;-&nbsp;</span>
+			  <span id="freqstop">5225 MHz</span>
+			</span>
+		  </div>
+		  <div id="ackinfo" class="row">
+			<span class="label">Distance:</span>
+			<span class="value" id="ack">0.5 miles (0.8 km)</span>
+		  </div>
+		  <div id="chainsinfo" class="row">
+			<span class="label">TX/RX Chains:</span>
+			<span class="value" id="chains">2X2</span>
+		  </div>
+		  <div id="powerinfo" class="row">
+			<span class="label">TX Power:</span>
+			<span class="value" id="txpower">23 dBm</span>
+		  </div>
+		  <div id="antennainfo" class="row">
+			<span class="label">Antenna:</span>
+			<span class="value" id="antenna">300 - 22 dBi</span>
+		  </div>
+		</div>
+		<div class="fieldset" id="ifinfo"><div class="row"><span class="label">WLAN0 MAC:</span><span class="value">80:2A:A8:BE:AC:24</span></div><div class="row"><span class="label">LAN0 MAC:</span><span class="value">80:2A:A8:BF:AC:24</span></div><div class="row"><span class="label">LAN0:</span><span class="value">100Mbps-Full</span></div></div></td>
+	  <td valign="top" style="width: 50%">
+		<div class="fieldset" id="hwinfo">
+		  <div class="row">
+			<span class="label">CPU:</span>
+			<span class="value">
+			  <span class="percentborder switchable"><div id="cpubar" class="hwbar" style="width: 18%;">&nbsp;</div></span>
+			  <span class="switchable">&nbsp;</span>
+			  <span id="cpu">18</span>
+			  <span>&nbsp;%</span>
+			</span>
+		  </div>
+		  <div class="row">
+			<span class="label">Memory:</span>
+			<span class="value">
+			  <span class="percentborder switchable"><div id="membar" class="hwbar" style="width: 38%;">&nbsp;</div></span>
+			  <span class="switchable">&nbsp;</span>
+			  <span id="memory">38</span>
+			  <span>&nbsp;%</span>
+			</span>
+		  </div>
+		</div>
+		<div class="fieldset">
+		<div class="fieldset" id="cinfo">
+		  <div id="apmacinfo" class="row">
+			<span class="label">AP MAC:</span>
+			<span class="value" id="apmac">74:AC:B9:0E:C3:A1</span>
+		  </div>
+		  <div id="signalinfo" class="row stainfo" style="display: block;">
+			<span class="label">Signal Strength:</span>
+			<span class="value">
+			  <span class="percentborder switchable"><div id="signalbar" class="mainbar" style="width: 100%;">&nbsp;</div></span>
+			  <span class="switchable">&nbsp;</span>
+			  <span id="signal">-65 dBm</span>
+			</span>
+		  </div>
+		  <div id="signal_chain" class="row initial_hide" style="display: block;">
+			<span class="label">Horizontal&nbsp;/&nbsp;Vertical:</span>
+			<span class="value">
+			 <span id="signal_0">-68</span>
+			 <span>&nbsp;/&nbsp;</span>
+			 <span id="signal_1">-67</span>
+			 <span>&nbsp;dBm</span>
+			</span>
+		  </div>
+		  <div id="coninfo" class="row apinfo" style="display: none;">
+			<span class="label">Connections:</span>
+			<span class="value" id="count"> 1</span>
+		  </div>
+		  <div id="nfinfo" class="row">
+			<span class="label">Noise Floor:</span>
+			<span class="value">
+			  <span id="noisef">-99 dBm</span>
+			</span>
+		  </div>
+		  <div id="ccqinfo" class="row">
+			<span class="label">Transmit CCQ:</span>
+			<span class="value">
+			  <span id="ccq">99.1 %</span>
+			  <span>&nbsp;</span>
+			</span>
+		  </div>
+		  <div id="rateinfo" class="row stainfo">
+	        <span class="label">TX/RX Rate:</span>
+			<span class="value">
+			  <span id="txrate">52 Mbps</span>
+			  <span>&nbsp;/&nbsp;</span>
+			  <span id="rxrate">144.444 Mbps</span>
+			</span>
+		  </div>
+		</div>
+		<div class="fieldset">
+		<div class="fieldset" id="pollinfo">
+		  <div id="pollstatusinfo" class="row">
+			<span class="label">airMAX:</span>
+			<span class="value" id="polling">Enabled</span>
+		  </div>
+		  <div id="pollprioinfo" class="row stapollinfo initial_hide" style="display: block;">
+			<span class="label">airMAX Priority:</span>
+			<span class="value" id="pollprio">Base</span>
+		  </div>
+		  <div id="amqinfo" class="row pollinfo initial_hide" style="display: block;">
+			<span class="label">airMAX Quality:</span>
+			<span class="value">
+			  <span class="percentborder"><div id="amqbar" class="mainbar" style="width: 93%;">&nbsp;</div></span>
+			  <span>&nbsp;</span>
+			  <span id="amq">93</span>
+			  <span>&nbsp;%</span>
+			</span>
+		  </div>
+		  <div id="amcinfo" class="row pollinfo initial_hide" style="display: block;">
+	        <span class="label">airMAX Capacity:</span>
+	        <span class="value">
+			  <span id="amcborder" class="percentborder"><div id="amcbar" class="mainbar" style="width: 100%;">&nbsp;</div></span>
+			  <span>&nbsp;</span>
+			  <span id="amc">100</span>
+			  <span>&nbsp;%</span>
+			</span>
+		  </div>
+		</div>
+		<div class="fieldset">
+		<div class="fieldset" id="airselectinfo" style="display: none;">
+		  <div id="airselectsatusinfo" class="row">
+			<span class="label">airSelect:</span>
+			<span class="value" id="airselect">Disabled</span>
+		  </div>
+		  <div id="airselectintervalinfo" class="row airselectinfo initial_hide" style="display: none;">
+			<span class="label">Hop Interval:</span>
+			<span class="value" id="airselectinterval">&nbsp;</span>
+		  </div>
+		</div>
+		
+		
+		
+		
+		<div id="airgw_info" class="fieldset initial_hide" style="display: none;">
+			<div class="row">
+				<span class="label">airMAX Gateway:</span>
+				<span class="value"><a href="https://10.120.121.3/mng_airgw.cgi" target="_blank">Connected (Click to manage)</a></span>
+			</div>
+		</div>
+		<div class="fieldset">
+		<div id="unms_info" class="row">
+			<span class="label">UNMS: <span class="help"><a id="unms_qm" href="https://10.120.121.3/200715.1626/help/en_US/unms.html" rel="help" class="unms_qm">[?]</a></span></span>
+			<span class="value">
+			<span id="unms_status">Disabled</span>
+			<span>&nbsp;</span>
+			</span>
+		</div>
+	   </div></div></div></div></td>
+	</tr>
+	<tr><td colspan="2">&nbsp;</td></tr>
+	<tr><th colspan="2">Monitor</th></tr>
+	<tr>
+	<td colspan="2" id="extrainfo">
+	<span id="throughputgraph" class="all"><a href="https://10.120.121.3/throughput.cgi" target="extraFrame" class="underline">Throughput</a> | </span><span id="stalist" class="apinfo initial_hide" style="display: none;"><a href="https://10.120.121.3/stalist.cgi" target="extraFrame">Stations</a> | </span><span id="stainfo" class="stainfo initial_hide" style="display: inline;"><a href="https://10.120.121.3/stainfo.cgi?ifname=ath0&amp;sta_mac=74:AC:B9:0E:C3:A1&amp;mode=ap" id="a_stainfo" name="a_stainfo" target="extraFrame">AP Information</a> | </span><span id="ifaces" class="all"><a href="https://10.120.121.3/ifaces.cgi" target="extraFrame">Interfaces</a> | </span><span id="ppp_info" class="router initial_hide" style="display: none;"><a href="https://10.120.121.3/pppinfo.cgi" target="extraFrame">PPPoE Information</a> | </span><span id="dhcpc_info" class="initial_hide" style="display: none;"><a href="https://10.120.121.3/dhcpc.cgi" target="extraFrame">DHCP Client</a> | </span><span id="arp" class="all"><a href="https://10.120.121.3/arp.cgi" target="extraFrame">ARP Table</a> | </span><span id="brmacs" class="bridge initial_hide" style="display: inline;"><a href="https://10.120.121.3/brmacs.cgi" target="extraFrame">Bridge Table</a> | </span><span id="sroutes" class="all"><a href="https://10.120.121.3/sroutes.cgi" target="extraFrame">Routes</a> | </span><span id="fwall" class="initial_hide" style="display: inline;"><a href="https://10.120.121.3/fw.cgi?netmode=bridge" id="a_fw" target="extraFrame">Firewall</a> | </span><span id="pfw" class="router initial_hide" style="display: none;"><a href="https://10.120.121.3/pfw.cgi" target="extraFrame">Port Forward</a> | </span><span id="dhcp_leases" class="router initial_hide" style="display: none;"><a href="https://10.120.121.3/leases.cgi" target="extraFrame">DHCP Leases</a> | </span><span id="satelites" class="gpsinfo initial_hide" style="display: none;"><a href="https://10.120.121.3/gpsstats.cgi" target="extraFrame">GPS Details</a> | </span><span id="nolinfo" class="all" style="display: none;"><a href="https://10.120.121.3/nolinfo.cgi" target="extraFrame">DFS Events</a> | </span><span id="log" class="all"><a href="https://10.120.121.3/log.cgi" target="extraFrame">Log</a></span>
+	</td>
+	</tr>
+	<tr>
+	<td colspan="2">
+<div id="extraFrame">
+
+
+<title>[Michel Prieto] - Throughput</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+<meta http-equiv="Pragma" content="no-cache">
+<link rel="shortcut icon" href="https://10.120.121.3/200715.1626/favicon.ico">
+<link href="https://10.120.121.3/200715.1626/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+.graph-border {
+	border: 1px solid #ffffff;
+}
+
+.graph-canvas {
+	position: relative;
+	height: 150px;
+	width: 350px;
+}
+
+</style>
+
+
+
+
+
+<!--[if lte IE 8]><script type="text/javascript" src="/200715.1626/js/excanvas.js"></script><![endif]-->
+
+
+
+
+<form action="https://10.120.121.3/througput.cgi" method="GET">
+<table id="throughput">
+	<tfoot>
+		<tr>
+			<td id="refresh" class="change" colspan="2">
+				<input type="button" onclick="return refreshAll();" value="Refresh">
+			</td>
+		</tr>
+	</tfoot>
+	<tbody><tr><td><span id="label0">WLAN0</span></td><td><span id="label1">LAN0</span></td></tr><tr><td><div class="graph-border"><div id="canvas0" class="graph-canvas" style="padding: 0px;"><canvas class="base" width="350" height="150"></canvas><canvas class="overlay" width="350" height="150" style="position: absolute; left: 0px; top: 0px;"></canvas><div class="tickLabels" style="font-size:smaller"><div class="xAxis x1Axis" style="color:#545454"></div><div class="yAxis y1Axis" style="color:#545454"><div class="tickLabel" style="position:absolute;text-align:right;top:138px;right:323px;width:27px">kbps 0</div><div class="tickLabel" style="position:absolute;text-align:right;top:121px;right:323px;width:27px">50</div><div class="tickLabel" style="position:absolute;text-align:right;top:103px;right:323px;width:27px">100</div><div class="tickLabel" style="position:absolute;text-align:right;top:86px;right:323px;width:27px">150</div><div class="tickLabel" style="position:absolute;text-align:right;top:69px;right:323px;width:27px">200</div><div class="tickLabel" style="position:absolute;text-align:right;top:51px;right:323px;width:27px">250</div><div class="tickLabel" style="position:absolute;text-align:right;top:34px;right:323px;width:27px">300</div><div class="tickLabel" style="position:absolute;text-align:right;top:16px;right:323px;width:27px">350</div><div class="tickLabel" style="position:absolute;text-align:right;top:-1px;right:323px;width:27px">400</div></div></div><div class="legend"><div style="position: absolute; width: 99px; height: 42px; top: 9px; left: 39px; background-color: rgb(255, 255, 255); opacity: 0.4;"> </div><table style="position:absolute;top:9px;left:39px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #2389C6;overflow:hidden"></div></div></td><td class="legendLabel">RX: 40.2kbps</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #FF0000;overflow:hidden"></div></div></td><td class="legendLabel">TX: 102kbps</td></tr></tbody></table></div></div></div></td><td><div class="graph-border"><div id="canvas1" class="graph-canvas" style="padding: 0px;"><canvas class="base" width="350" height="150"></canvas><canvas class="overlay" width="350" height="150" style="position: absolute; left: 0px; top: 0px;"></canvas><div class="tickLabels" style="font-size:smaller"><div class="xAxis x1Axis" style="color:#545454"></div><div class="yAxis y1Axis" style="color:#545454"><div class="tickLabel" style="position:absolute;text-align:right;top:138px;right:323px;width:27px">kbps 0</div><div class="tickLabel" style="position:absolute;text-align:right;top:118px;right:323px;width:27px">50</div><div class="tickLabel" style="position:absolute;text-align:right;top:98px;right:323px;width:27px">100</div><div class="tickLabel" style="position:absolute;text-align:right;top:78px;right:323px;width:27px">150</div><div class="tickLabel" style="position:absolute;text-align:right;top:59px;right:323px;width:27px">200</div><div class="tickLabel" style="position:absolute;text-align:right;top:39px;right:323px;width:27px">250</div><div class="tickLabel" style="position:absolute;text-align:right;top:19px;right:323px;width:27px">300</div><div class="tickLabel" style="position:absolute;text-align:right;top:-1px;right:323px;width:27px">350</div></div></div><div class="legend"><div style="position: absolute; width: 97px; height: 42px; top: 9px; left: 39px; background-color: rgb(255, 255, 255); opacity: 0.4;"> </div><table style="position:absolute;top:9px;left:39px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #2389C6;overflow:hidden"></div></div></td><td class="legendLabel">RX: 621bps</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #FF0000;overflow:hidden"></div></div></td><td class="legendLabel">TX: 3.43kbps</td></tr></tbody></table></div></div></div></td></tr></tbody>
+</table>
+</form>
+
+
+
+</div>
+	</td>
+	</tr>
+	</tbody></table>
+	</td>
+	</tr>
+	<tr>
+           <td colspan="2">
+           	<table cellpadding="0" align="center" cellspacing="0" width="100%">
+                <tbody><tr>
+           		<td height="10" class="footlogo"><img src="https://10.120.121.3/glogo.cgi" border="0"></td>
+	           	<td height="10" class="foottext">
+				
+<script type="text/javascript" language="javascript">
+function handle_licensed(country)
+{
+	if (country == "511" || country == "2124")
+	{
+		$(".n_lfua").hide();
+		$(".lfua").css("display", "inline");
+	}
+	else
+	{
+		$(".lfua").hide();
+		$(".n_lfua").css("display", "inline");
+	}
+
+}
+
+$(document).ready(
+	function()
+	{
+		$("#country_select").change(function() { handle_licensed($(this).val()); } ).change();
+		$("#country").change(function() { handle_licensed($(this).val()); } ).change();
+	}
+);
+
+</script>
+Ubiquiti Networks <a href="https://10.120.121.3/200715.1626/help/en_US/legal_eula.html" onclick="return showLegalText(&quot;/200715.1626/help/en_US/legal_eula.html&quot;, &quot;Close&quot;)">EULA</a> and <a href="https://10.120.121.3/200715.1626/help/en_US/legal_privacy_policy.html" onclick="return showLegalText(&quot;/200715.1626/help/en_US/legal_privacy_policy.html&quot;, &quot;Close&quot;)">PRIVACY POLICY</a><br>
+				© Copyright 2006-2020 Ubiquiti Networks, Inc.
+			</td>
+                </tr>
+                </tbody></table>
+           </td>
+        </tr>
+</tbody></table>
+
+
+</body></html>
